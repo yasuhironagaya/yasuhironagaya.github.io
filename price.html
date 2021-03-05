@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>加工単価を計算</title>
+  <link  rel="stylesheet" href="css/styles.css">
+  
+</head>
+<body>
+  <header>
+    <h1>加工単価を計算</h1>
+  </header>
+  <main> 
+    <label for="txtTp">標準時間(hr):<input type="text" id="txtTp" size="5" required></label><br>
+    <label for="txtTs">作業時間(hr):<input type="text" id="txtTs" size="5"></label><br>
+    <label for="txtLot">ロット(個):<input type="text" id="txtLot" size="5"></label><br>
+    <label for="txtOmm">ＯＭＭ係数:<input type="text" id="txtOmm" size="5"></label><br>
+
+    <hr>
+
+    <div>
+      <label>K4機械:<span id="K4ki"></span></label><br>
+      <label>K4NC機械: <span id="K4nc"></span></label><br>
+      <label>K4機械以外: <span id="K4han"></span></label><br>
+      <br>
+      <label>K7機械: <span id="K7ki"></span></label><br>
+      <label>K7NC機械: <span id="K7nc"></span></label><br>
+      <label>K7機械以外: <span id="K7han"></span></label><br>
+
+    </div>
+
+    <hr>
+
+    <label><button onclick="calc()">計算</button></label>
+
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+
+ 
+<script src="main.js"></script>  
+</body>
+</html>
